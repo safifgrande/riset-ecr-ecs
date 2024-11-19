@@ -39,6 +39,19 @@ app.get('/', (req, res) => {
 });
 
 /**
+ * 
+ * /check:
+ *   get:
+ *     description: Just check api
+ *     responses:
+ *       200:
+ *         description: this check endpoint
+ */
+app.get('/check', (req, res) => {
+  res.send('Check API!');
+});
+
+/**
  * @swagger
  * /hello:
  *   get:
